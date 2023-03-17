@@ -1,0 +1,31 @@
+.userSignIn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    width: 200px;
+    height: 120px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: black;
+    padding-top: 20px;
+    border-radius: 2%;
+    background-color: rgb(81, 81, 81);
+  }
+  
+  #spacingDiv{
+    height: 10px;
+  }
+  
+  #inputs{
+    text-align: center;
+  }
+  
+  #createButton{
+    font-size: 14px;
+    cursor: pointer;
+    color: white;
+    position: relative;
+    bottom: 10px;
+  }

@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import './StyleSheets/App.css';
+import './StyleSheets/SignIn.css';
+import './StyleSheets/CreateNewUser.css';
+import CreateNewUser from "./Components/createNewUser";
+import SignIn from './Components/signIn';
+import {useState} from "react";
 
 function App() {
+
+  const [hideCreate, setHideCreate] = useState(true);
+  const [username, setUsername] = useState("");
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 id="header1">Project</h1>
+      <CreateNewUser 
+      hideCreate={hideCreate}
+      setHideCreate={setHideCreate}
+      username={username}
+      setUsername={setUsername}
+      />
+      <SignIn 
+      hideCreate={hideCreate}
+      setHideCreate={setHideCreate}
+      />
     </div>
   );
 }
