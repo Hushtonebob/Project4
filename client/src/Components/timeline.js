@@ -17,8 +17,9 @@ function Timeline(){
         <img id="picture2" src={"https://loviesguitars.com/wp-content/uploads/2020/02/IMG_2169.jpg"} alt="This failed to load" />
         <p id="picInfo">This is a guitar</p>
     </div>
-    <div className="numbers">
+    <div className="responses">
         <ul id="numberLikes">numbers placeholder</ul>
+        <img id="clearHeart" src="/Users/bobbydeluna/Development/code/Phase 4/project-template-react-rails-api/clearHeart.png"></img>
     </div>    
 </div>   
     )
