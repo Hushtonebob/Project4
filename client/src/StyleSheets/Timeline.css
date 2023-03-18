@@ -88,8 +88,8 @@
   
   .Pictures{
     position: relative;
-    align-content: center;
     margin: 0 auto;
+    width: 550px;
     z-index: 2;
   }
   
@@ -97,12 +97,18 @@
     border-radius: 10%;
     height: 400px;
     width: 550px;
-    position: relative;
   }
   
   #picture2{
     border-radius: 10%;
     height: 400px;
     width: 550px;
+  }
+
+  #picInfo{
+    color: white;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
   }
   

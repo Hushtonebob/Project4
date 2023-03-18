@@ -12,8 +12,10 @@ function Timeline(){
         <p id="post">Post content </p>
     </div>  
     <div className="Pictures">
-        {<img id="picture" src={"https://kleypot.com/content/images/2019/08/20190814_160859.jpg"} alt="This failed to load" />}
-        {true ? null :<img id="picture2" src={"blam"} alt="This failed to load" />}
+        <img id="picture" src={"https://kleypot.com/content/images/2019/08/20190814_160859.jpg"} alt="This failed to load" />
+        <p id="picInfo">This is pedal board</p>
+        <img id="picture2" src={"https://loviesguitars.com/wp-content/uploads/2020/02/IMG_2169.jpg"} alt="This failed to load" />
+        <p id="picInfo">This is a guitar</p>
     </div>
     <div className="numbers">
         <ul id="numberLikes">numbers placeholder</ul>
