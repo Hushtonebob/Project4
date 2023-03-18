@@ -1,0 +1,138 @@
+.default{
+    background: #243447;
+    transition: 1s;
+    padding-top: 10px;
+}
+
+.postBox{
+    margin: 0 auto;
+    width: 700px;
+    border-style: solid;
+    border-width: thin;
+    position:relative;
+    border-color: grey; 
+    transition: 1s;
+  }
+
+  .userInfo{
+    margin: 0 auto;
+    color: white;
+  }
+  
+  #profilePic{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-left: 20px;
+    margin-top: 30px;
+  }
+  
+  .username{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    position: relative;
+    left: 100px;
+    top: -105px;
+    width: 280px;
+    font-size:0.92vw;
+    z-index: 0;
+    transition: 1s;
+  }
+  
+  
+  .postContent{
+    width: 500px;
+    left: 20px;
+    justify-content: stretch;
+  }
+  
+  #post{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    position: relative;
+    left: 100px;
+    bottom: 130px;
+    z-index: 4;
+    font-size: 25px;
+    transition: 1s;
+  }
+  
+  .Icons{
+    width: 500px;
+    position: relative;
+    left: 50px;
+    bottom: 150px;
+  }
+  
+  #retweet{
+  height: 70px;
+  width: 70px;
+  position: relative;
+  left: 180px;
+  top: 10px;
+  }
+  
+  #replies{
+    height: 65px;
+    width: 65px;
+    position: relative;
+    top: 3px;
+  }
+  
+  #clearHeart{
+    z-index: 1;
+    position: relative;
+    left: 370px;
+    height: 50px;
+    width: 50px;
+  }
+  
+  .numbers{
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  position: relative;
+  bottom: 120px;
+  z-index: 7;
+  margin-bottom: -190px;
+  }
+  
+  #numberReplies{
+    position: relative;
+    left: 85px;
+    bottom: 80px;
+  }
+  
+  #numberRetweets{
+    float:right ;
+    position: relative;
+    right: 305px;
+    bottom: 145px;
+  }
+  
+  #numberLikes{
+    position: relative;
+    width:20px;
+    float: right;
+    bottom: 140px;
+    right: 0px;
+  }
+  
+  .Pictures{
+    position: relative;
+    width: 200px;
+    height:fit-content;
+    left: 75px;
+    bottom: 160px;
+  }
+  
+  #picture{
+    border-radius: 10%;
+    height: 400px;
+    width: 550px;
+  }
+  
+  #picture2{
+    border-radius: 10%;
+    height: 400px;
+    width: 550px;
+  }
+  
