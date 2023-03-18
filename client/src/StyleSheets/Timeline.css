@@ -11,12 +11,15 @@
     border-width: thin;
     position:relative;
     border-color: grey; 
-    transition: 1s;
+    transition: 1s;    
   }
 
   .userInfo{
     margin: 0 auto;
+    position: relative;
     color: white;
+    z-index: 0;
+    height: 100px;
   }
   
   #profilePic{
@@ -27,33 +30,33 @@
     margin-top: 30px;
   }
   
-  .username{
+  #username{
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
     position: relative;
     left: 100px;
-    top: -105px;
+    top: -95px;
     width: 280px;
     font-size:0.92vw;
-    z-index: 0;
     transition: 1s;
+    font-size: 45px;
   }
   
-  
   .postContent{
-    width: 500px;
-    left: 20px;
-    justify-content: stretch;
+    position: relative;
+    bottom:130px ;
+    z-index: 1;
+    overflow: auto;
   }
   
   #post{
     color: white;
     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
-    position: relative;
-    left: 100px;
-    bottom: 130px;
-    z-index: 4;
     font-size: 25px;
+    width: 490px;
+    position: relative;
+    margin: 0 auto;
     transition: 1s;
+    padding-bottom: 20px;
   }
   
   .Icons{
@@ -61,22 +64,9 @@
     position: relative;
     left: 50px;
     bottom: 150px;
+    background-color: aquamarine;
   }
   
-  #retweet{
-  height: 70px;
-  width: 70px;
-  position: relative;
-  left: 180px;
-  top: 10px;
-  }
-  
-  #replies{
-    height: 65px;
-    width: 65px;
-    position: relative;
-    top: 3px;
-  }
   
   #clearHeart{
     z-index: 1;
@@ -87,47 +77,27 @@
   }
   
   .numbers{
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  font-family: Verdana, Tahoma, sans-serif;
+  font-size:10px;
   position: relative;
-  bottom: 120px;
-  z-index: 7;
-  margin-bottom: -190px;
-  }
-  
-  #numberReplies{
-    position: relative;
-    left: 85px;
-    bottom: 80px;
-  }
-  
-  #numberRetweets{
-    float:right ;
-    position: relative;
-    right: 305px;
-    bottom: 145px;
-  }
-  
-  #numberLikes{
-    position: relative;
-    width:20px;
-    float: right;
-    bottom: 140px;
-    right: 0px;
+  background-color: aqua;
+  height: 50px;
+  width: 50px;
+  color: black;
   }
   
   .Pictures{
     position: relative;
-    width: 200px;
-    height:fit-content;
-    left: 75px;
-    bottom: 160px;
+    align-content: center;
+    margin: 0 auto;
+    z-index: 2;
   }
   
   #picture{
     border-radius: 10%;
     height: 400px;
     width: 550px;
+    position: relative;
   }
   
   #picture2{

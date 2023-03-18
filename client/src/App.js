@@ -17,17 +17,19 @@ function App() {
   return (
     <div className="App">
       <h1 id="header1">Project</h1>
-      <CreateNewUser 
-      hideCreate={hideCreate}
-      setHideCreate={setHideCreate}
-      username={username}
-      setUsername={setUsername}
-      />
-      <SignIn 
-      hideCreate={hideCreate}
-      setHideCreate={setHideCreate}
-      />
-      <Timeline />
+      <div>
+        <CreateNewUser 
+        hideCreate={hideCreate}
+        setHideCreate={setHideCreate}
+        username={username}
+        setUsername={setUsername}
+        />
+        <SignIn 
+        hideCreate={hideCreate}
+        setHideCreate={setHideCreate}
+        />
+        <Timeline />
+      </div>
     </div>
   );
 }
