@@ -2,34 +2,21 @@ import React from "react";
 import './StyleSheets/App.css';
 import './StyleSheets/SignIn.css';
 import './StyleSheets/CreateNewUser.css';
-import './StyleSheets/Timeline.css';
-import CreateNewUser from "./Components/createNewUser";
+import './StyleSheets/Posts.css';
 import SignIn from './Components/signIn';
-import Timeline from "./Components/timeline";
-import {useState} from "react";
+import NavBar from "./Components/Navbar";
+import {Route, Routes} from "react-router-dom";
+import Posts from "./Components/Posts";
 
 function App() {
-
-  const [hideCreate, setHideCreate] = useState(true);
-  const [username, setUsername] = useState("");
-
-
   return (
     <div className="App">
       <h1 id="header1">Project</h1>
-      <div>
-        <CreateNewUser 
-        hideCreate={hideCreate}
-        setHideCreate={setHideCreate}
-        username={username}
-        setUsername={setUsername}
-        />
-        <SignIn 
-        hideCreate={hideCreate}
-        setHideCreate={setHideCreate}
-        />
-        <Timeline />
-      </div>
+      <NavBar />
+      <Routes>
+        <Route path="/" element = {<SignIn />}/>
+            <Route path="home" element = {<Posts />} />
+      </Routes>
     </div>
   );
 }

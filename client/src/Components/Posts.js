@@ -1,5 +1,5 @@
 
-function Timeline(){
+function Posts(){
 
 
     return(
@@ -19,9 +19,9 @@ function Timeline(){
     </div>
     <div className="responses">
         <ul id="numberLikes">numbers placeholder</ul>
-        <img id="clearHeart" src="/Users/bobbydeluna/Development/code/Phase 4/project-template-react-rails-api/clearHeart.png"></img>
+        <img id="clearHeart" src="/Users/bobbydeluna/Development/code/Phase 4/project-template-react-rails-api/clearHeart.png" alt="This failed"></img>
     </div>    
 </div>   
     )
 };
-export default Timeline;
+export default Posts;
