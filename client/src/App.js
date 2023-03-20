@@ -3,10 +3,13 @@ import './StyleSheets/App.css';
 import './StyleSheets/SignIn.css';
 import './StyleSheets/CreateNewUser.css';
 import './StyleSheets/Posts.css';
+import './StyleSheets/Navbar.css';
+import './StyleSheets/Profile.css'
 import SignIn from './Components/signIn';
 import NavBar from "./Components/Navbar";
-import {Route, Routes} from "react-router-dom";
 import Posts from "./Components/Posts";
+import Profile from "./Components/Profile";
+import {Route, Routes} from "react-router-dom";
 
 function App() {
   return (
@@ -15,7 +18,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element = {<SignIn />}/>
-            <Route path="home" element = {<Posts />} />
+        <Route path="home" element = {<Posts />} />
+        <Route path="profile" element = {<Profile />} />
       </Routes>
     </div>
   );
