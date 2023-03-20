@@ -1,7 +1,8 @@
 .Navbar{
     background-color: rgb(81, 81, 81);
+    z-index: 0;
     position: fixed;
-    margin-bottom: 150px;
+    top: 150px;
     left: 2%;
     width: 295px;
     height: 400px;

@@ -7,6 +7,7 @@
     text-align: center;
     border-radius: 2%;
     margin-bottom: 50px;
+    margin-top: 50px;
 }
 
 #profileName{
@@ -29,10 +30,28 @@
 .userGroups{
     background-color: rgb(81, 81, 81);
     position: relative;
-    z-index: 2;
-    left: 170%;
+    top: -20px;
+    left: 128%;
     width: 295px;
     height: 400px;
     align-items: center;    
     border-radius: 2%;
+    text-align: center;
+}
+
+#groupListHeader{
+    color: white;
+    font-size: 60px;
+    text-decoration: underline;
+}
+
+.groupList{
+    position:relative;
+    align-items: center;
+    color:white;
+    font-size: 50px;
+    text-align: center;
+    margin-right: 40px;
+    margin-top: -25px;
+
 }
