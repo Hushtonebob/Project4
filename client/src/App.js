@@ -7,18 +7,20 @@ import './StyleSheets/Posts.css';
 import './StyleSheets/Navbar.css';
 import './StyleSheets/Profile.css';
 import './StyleSheets/GroupMaker.css';
-import './StyleSheets/GroupList.css'
+import './StyleSheets/GroupList.css';
+import './StyleSheets/About.css';
 import SignIn from './Components/signIn';
 import NavBar from "./Components/Navbar";
 import Posts from "./Components/Posts";
 import Profile from "./Components/Profile";
 import GroupMaker from "./Components/GroupMaker";
 import GroupList from "./Components/GroupList";
+import About from "./Components/About.js"
 
 function App() {
   return (
     <div className="App">
-      <h1 id="header1">Gear Talk</h1>
+      <h1 id="header1">GearTalk</h1>
       <NavBar />
       <Routes>
         <Route path="/" element = {<SignIn />}/>
@@ -30,6 +32,7 @@ function App() {
           <Route path="pedals" element ={<GroupMaker />} />
           <Route path="amps" element ={<GroupMaker />} />
         </Route>
+        <Route path="about" element={<About />} />
       </Routes>
     </div>
   );

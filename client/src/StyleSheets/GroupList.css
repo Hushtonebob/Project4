@@ -17,7 +17,6 @@
 
 }
 
-
 #groupCardName{
     position: relative;
     color: white;
@@ -51,6 +50,20 @@
     margin: 0 auto;
     top: 35px;
     background-color: black;
+    width: 200px;
+    height: 22px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 2%;
+}
+
+#alreadyJoined{
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    top: 35px;
+    background-color:blueviolet;
     width: 200px;
     height: 22px;
     text-align: center;
