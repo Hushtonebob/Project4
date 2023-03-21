@@ -1,6 +1,6 @@
 import Posts from "./Posts";
 
-function Group(){
+function GroupMaker(){
 return(
     <div>
     <div className="groupBox">
@@ -20,4 +20,4 @@ return(
     )
 };
 
-export default Group;
+export default GroupMaker;
