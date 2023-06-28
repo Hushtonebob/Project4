@@ -3,6 +3,8 @@ import { useState } from "react";
 
 function GroupList() {
 
+    //THIS ONE NEEDS TO BE REFACTORED USESING MAP
+
     const [join, setJoin] = useState(true);
 
 return (

@@ -3,11 +3,21 @@ import CreateNewUser from "./createNewUser";
 
 function SignIn() {
 
-const handleSignIn = () => console.log("Signed in");
+const [hideCreate, setHideCreate] = useState(true);
 const handleCreate = () => {hideCreate === true ? setHideCreate(!hideCreate) : console.log("blam")};
-const [username, setUsername] = useState("");  
-const [hideCreate, setHideCreate] = useState(false);
 
+const handleSignIn = () => {
+    fetch("/login",{
+        method:"POST",
+        headers:{
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({username}),
+    })
+    .then((res)=>res.json())
+    .then((user)=>onLogin(user));
+
+}
 
     return (
 <div className="signInDiv" >
@@ -16,6 +26,7 @@ const [hideCreate, setHideCreate] = useState(false);
             <input id="usernameSignIn"
             type="text" 
             placeholder="Username"
+            onIn
             ></input>
             <div id="spacingDiv"></div>
             <input id="passwordSignIn" type="text" placeholder="Password"></input>
@@ -27,9 +38,7 @@ const [hideCreate, setHideCreate] = useState(false);
     </div>
     <CreateNewUser 
           hideCreate={hideCreate}
-          setHideCreate={setHideCreate}
-          username={username}
-          setUsername={setUsername} />
+          setHideCreate={setHideCreate} />
 </div>
 )
 }
